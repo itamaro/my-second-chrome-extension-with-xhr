@@ -19,6 +19,7 @@
     "128": "/images/get_started128.png"
   },
   "host_permissions": [
-    "https://fastapi-demo-app-mrbe4zqmdq-uw.a.run.app/"
+    "https://fastapi-demo-app-mrbe4zqmdq-uw.a.run.app/",
+    "https://fastapi-graphql-demo-mrbe4zqmdq-uw.a.run.app/"
   ]
 }

@@ -1,5 +1,4 @@
 const xhrTestUrl = "https://fastapi-demo-app-mrbe4zqmdq-uw.a.run.app/";
-const stubDiv = document.getElementById("xhrStub");
 
 fetch(xhrTestUrl)
   .then((response) => {
@@ -10,6 +9,7 @@ fetch(xhrTestUrl)
     }
     response.json()
       .then((data) => {
+        const stubDiv = document.getElementById("xhrStub");
         stubDiv.innerText = data['message'];
       });
   })
