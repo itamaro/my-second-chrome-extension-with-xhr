@@ -19,6 +19,6 @@
     "128": "/images/get_started128.png"
   },
   "host_permissions": [
-    "https://us-west3-onion-on-fire.cloudfunctions.net/"
+    "https://fastapi-demo-app-mrbe4zqmdq-uw.a.run.app/"
   ]
 }

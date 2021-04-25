@@ -1,4 +1,4 @@
-const xhrTestUrl = "https://us-west3-onion-on-fire.cloudfunctions.net/gql-test-1";
+const xhrTestUrl = "https://fastapi-demo-app-mrbe4zqmdq-uw.a.run.app/";
 const stubDiv = document.getElementById("xhrStub");
 
 fetch(xhrTestUrl)
@@ -8,9 +8,9 @@ fetch(xhrTestUrl)
         response.status);
       return;
     }
-    response.text()
-      .then((text) => {
-        stubDiv.innerText = text;
+    response.json()
+      .then((data) => {
+        stubDiv.innerText = data['message'];
       });
   })
   .catch((err) => {
